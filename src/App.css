@@ -9,3 +9,10 @@ body{
       -o-background-size: cover;
       background-size: cover;
 }
+.dv{
+background-color:  #FFF
+}
+.dv:hover{
+      cursor: pointer;
+      background-color:  #EB212E;
+}

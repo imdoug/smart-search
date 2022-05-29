@@ -1,4 +1,4 @@
-import { NavBar, Footer, Input, Banner } from './components'
+import { NavBar, Footer, SearchBar, Banner } from './components'
 import './App.css'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
     <>
         <NavBar />
         <Banner />
-        <Input />
+        <SearchBar />
         <Footer />
     </>
   );
