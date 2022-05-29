@@ -4,8 +4,8 @@ import { socials } from '../data/socials'
  
 const NavBar = () => {
   return (
-      <Container style={{width: '100%', height: 50, display: 'flex', alignItems: 'center', justifyContent:'end'}}>
-            <Container style={{ width: 200, display: 'flex', justifyContent: 'space-between', margin : 0}}>
+      <Container maxWidth="l" style={{ display: 'flex', alignItems: 'center', justifyContent:'end', margin: 5, marginBottom: 80}}>
+            <Container style={{ width: 200, display: 'flex', justifyContent: 'space-between', margin: 0}}>
                   {socials.map((value)=>(
                         <Link key={value.id}  href={value.link}>
                               {value.social === 'linkedin' && <LinkedIn style={{fontSize: 35, color: '#999'}}/> }

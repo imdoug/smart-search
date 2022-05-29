@@ -1,11 +1,13 @@
-import { NavBar, Footer, Input } from './components'
+import { NavBar, Footer, Input, Banner } from './components'
+import './App.css'
 
 function App() {
   return (
     <>
-      <NavBar />
-      <Input />
-      <Footer />
+        <NavBar />
+        <Banner />
+        <Input />
+        <Footer />
     </>
   );
 }
