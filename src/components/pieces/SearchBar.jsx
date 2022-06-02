@@ -70,7 +70,6 @@ const Input = () => {
       >
         { !show ? <></> :
           filteredData.slice(0,6).map((value, key) => (
-            <>
               <div
                 className="item"
                 key={key}
@@ -79,7 +78,6 @@ const Input = () => {
               >
                 {value.title}
               </div>
-            </>
           ))}
       </div>
     </>
