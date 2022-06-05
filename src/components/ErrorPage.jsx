@@ -8,10 +8,10 @@ const ErrorPage = () => {
             
       })
   return (
-      <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
-            <div>
-                  <h1>Don't go to the path of darkness, go path to the Jedi path</h1>
-                  <Button  style={{marginTop: 10, marginBottom: 10}}variant='outlined'  onClick={()=>{navigate('/')}}>Go Back</Button>
+      <div style={{width: '100%', display: 'block', justifyContent: 'center'}}>
+            <div style={{ display: 'flex', flexDirection:'column'}}>
+                  <h1 style={{color: '#FFF', alignSelf: 'center'}}>Don't choose the darkness, go to the Jedi path</h1>
+                  <Button  style={{ width:'10%',marginTop: 10, marginBottom: 100, alignSelf: 'center'}}variant='outlined'  onClick={()=>{navigate('/')}}>Go Back</Button>
             </div>
       </div>
   )

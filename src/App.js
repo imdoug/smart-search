@@ -13,6 +13,7 @@ function App() {
         <Route path='/error' element={<ErrorPage />} />
       </Routes>
       <Footer />
+      {/* 10A5F5 */}
     </Router>
     </>
   );

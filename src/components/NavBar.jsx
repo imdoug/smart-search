@@ -11,7 +11,7 @@ const NavBar = () => {
       <Container maxWidth="l" style={{ display: 'flex', alignItems: 'center', justifyContent:'end', margin: 5, marginBottom: 80}}>
             <Container style={{ width: 200, display: 'flex', justifyContent: 'space-between', margin: 0}}>
                   {socials.map((value)=>(
-                        <Link key={value.id}  href={value.link} target="_blank">
+                        <Link  key={value.id}  href={value.link} target="_blank">
                               {value.social === 'linkedin' && <LinkedIn style={{fontSize: 35, color: '#999'}}/> }
                               {value.social === 'github' && <GitHub style={{fontSize: 35, color: '#999'}}/> }
                               {value.social === 'instagram' && <Instagram style={{fontSize: 35, color: '#999'}}/> }

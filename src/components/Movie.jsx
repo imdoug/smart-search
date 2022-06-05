@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import { getData } from '../data/data'
-import MovieInfo from "./pieces/MovieInfo";
-import Trailer from "./pieces/Trailer";
+import { MovieInfo, Trailer } from './index'
 import { Button } from "@mui/material";
 import { useNavigate } from 'react-router-dom'
 import { useEffect } from "react";
@@ -10,6 +9,11 @@ const Movie = () => {
       let { id } = useParams();
       let movie = getData(parseInt(id));
       const navigate = useNavigate()
+      useEffect(()=>{
+        if(movie === undefined){
+          navigate('/error')
+        }
+      },[])
   return (
     <>
       <div style={{display: 'flex', justifyContent: 'center'}}>
